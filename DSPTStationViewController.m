@@ -8,6 +8,7 @@
 
 #import "DSPTStationViewController.h"
 #import "DSPTElevator.h"
+#import "DSPTElevatorCell.h"
 
 @interface DSPTStationViewController ()
 
@@ -50,11 +51,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ElevatorPrototypeCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    DSPTElevatorCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     DSPTElevator* elevator = [[self.station getElevators:self] objectAtIndex:indexPath.row];
-    cell.textLabel.text = [elevator getDisplayName];
-    cell.detailTextLabel.text = [elevator getDisplayStatus];
+    cell.positionLabel.text = elevator.situation;
+    cell.directionLabel.text = elevator.direction;
+    cell.statusLabel.text = elevator.status;
+    cell.updateLabel.text = [elevator.lastUpdate substringToIndex:16];
     return cell;
 }
 

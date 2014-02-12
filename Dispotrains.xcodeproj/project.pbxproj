@@ -16,6 +16,7 @@
 		8F26223B18A7EFC900F428A9 /* DSPTNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26223A18A7EFC900F428A9 /* DSPTNetworkViewController.m */; };
 		8F26223D18A7F34F00F428A9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26223C18A7F34F00F428A9 /* Storyboard.storyboard */; };
 		8F26224018A9707000F428A9 /* DSPTLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26223F18A9707000F428A9 /* DSPTLineViewController.m */; };
+		8FB78E1118ABB32100C39D8E /* DSPTElevatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB78E1018ABB32100C39D8E /* DSPTElevatorCell.m */; };
 		8FC61AE118A7C79C00377FD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC61AE018A7C79C00377FD4 /* Foundation.framework */; };
 		8FC61AE318A7C79C00377FD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC61AE218A7C79C00377FD4 /* CoreGraphics.framework */; };
 		8FC61AE518A7C79C00377FD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC61AE418A7C79C00377FD4 /* UIKit.framework */; };
@@ -57,6 +58,8 @@
 		8F26223C18A7F34F00F428A9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8F26223E18A9707000F428A9 /* DSPTLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSPTLineViewController.h; path = ../DSPTLineViewController.h; sourceTree = "<group>"; };
 		8F26223F18A9707000F428A9 /* DSPTLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSPTLineViewController.m; path = ../DSPTLineViewController.m; sourceTree = "<group>"; };
+		8FB78E0F18ABB32100C39D8E /* DSPTElevatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPTElevatorCell.h; sourceTree = "<group>"; };
+		8FB78E1018ABB32100C39D8E /* DSPTElevatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPTElevatorCell.m; sourceTree = "<group>"; };
 		8FC61ADD18A7C79C00377FD4 /* Dispotrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dispotrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC61AE018A7C79C00377FD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8FC61AE218A7C79C00377FD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +166,8 @@
 				8FC61AF018A7C79C00377FD4 /* DSPTAppDelegate.m */,
 				8FC61AF218A7C79C00377FD4 /* Images.xcassets */,
 				8FC61AE718A7C79C00377FD4 /* Supporting Files */,
+				8FB78E0F18ABB32100C39D8E /* DSPTElevatorCell.h */,
+				8FB78E1018ABB32100C39D8E /* DSPTElevatorCell.m */,
 			);
 			path = Dispotrains;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 			files = (
 				8F26223218A7DB6400F428A9 /* DSPTLine.m in Sources */,
 				8F26223B18A7EFC900F428A9 /* DSPTNetworkViewController.m in Sources */,
+				8FB78E1118ABB32100C39D8E /* DSPTElevatorCell.m in Sources */,
 				8F26223518A7DB7600F428A9 /* DSPTStation.m in Sources */,
 				8FC61AED18A7C79C00377FD4 /* main.m in Sources */,
 				8FC61AF118A7C79C00377FD4 /* DSPTAppDelegate.m in Sources */,

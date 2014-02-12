@@ -41,7 +41,6 @@
         [status appendString:self.name];
         [status appendString:@"/"];
         [self.manager GET: [status stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-             NSLog(@"JSON: %@", responseObject);
              [self parseResponseObject:responseObject];
              self.loaded = true;
              [[self.controller tableView] reloadData];
